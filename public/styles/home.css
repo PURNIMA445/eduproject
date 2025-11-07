@@ -1,0 +1,183 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px; 
+  }
+  
+  body {
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+  }
+#main
+{
+    background-color: #563f3f;
+    width: 100%;
+    min-height: 100vh;
+    
+}
+/* Header styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f43f5e; 
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 15px 20px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 26px; /* bigger text */
+  font-weight: 500;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 32px; 
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-list li a:hover {
+  text-decoration: underline;
+}
+
+.content
+{
+  
+  width: 90%;
+  max-width: 1200px;
+  min-height: 100vh;
+  background-color: #6a3b3b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem; 
+  
+  padding: 3rem;
+  margin: 0 auto;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    
+}
+.page1
+{
+  margin-top: 100px;
+}
+.page1 h1{
+    
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    
+    line-height: 1.1;
+    
+}
+
+.page1 p
+{
+  max-width: 40ch; 
+  text-align: justify;
+  color: rgb(220, 210, 210);
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  margin-top: 1.5rem;
+  line-height: 1.6;
+  word-spacing: 0.1rem;
+}
+.img {
+    flex: 1 1 40%; /* flex-grow:1, flex-shrink:1, basis:40% */
+    display: flex;
+    justify-content: center;
+  }
+  .img img {
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    border-radius: 1rem;
+    border: 3px solid #fff;
+    
+    object-fit: cover;
+  }
+  .page2 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; /* full viewport */
+    margin-top: 3rem;
+    display: flex;
+    justify-content: flex-end; /* align Venn diagram to the right */
+    align-items: center;
+    padding-right: 50px;
+  }
+  
+  .venn-right {
+    position: relative;
+    width: 250px;
+    height: 200px;
+  }
+  
+  /* circles with proper overlap and transparency */
+  .circle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .circle.c1 { 
+    background-color: rgba(255, 0, 0, 0.7); /* red */
+    top: 25px; 
+    left: 0; 
+    z-index: 1;
+  }
+  
+  .circle.c2 { 
+    background-color: rgba(0, 0, 255, 0.7); /* blue */
+    top: 25px; 
+    left: 75px;  /* proper overlap (~50px overlap) */
+    z-index: 2;
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .page1 p {
+      max-width: 100%;
+    }
+  
+    .img {
+      margin-top: 6rem;
+      width: 90%;
+      
+    }
+  }
