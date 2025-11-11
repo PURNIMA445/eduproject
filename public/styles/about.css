@@ -12,6 +12,7 @@ html, body {
 
 #main {
   background-color: #6a3b3b;
+
 }
 
 /* ===== MAIN SECTION ===== */
@@ -21,6 +22,7 @@ html, body {
   width: 80%;
   padding: 4rem 3rem 0 3rem;
   margin: 0 auto;
+  z-index: 2;
 }
 
 /* ===== SECTION 1 (HEADING) ===== */
@@ -92,39 +94,24 @@ html, body {
   line-height: 1.7;
   color: #e3e3e3;
 }
-
-
-.custom-shape-divider-bottom-1762686975 {
-  position: absolute;
-  bottom: 0; 
-  left: 0;
-  width: 100%;
-  top: 100%;
-  line-height: 0;
+.middlesec {
+position: relative;
+width: 80%;
+margin: 0 auto;
+background: #4f4040;
+color: white;
+padding: 4rem 3rem 8rem 3rem;
+overflow: hidden;
+z-index: 2;
 }
 
-.custom-shape-divider-bottom-1762686975 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 130px;
-}
 
-.custom-shape-divider-bottom-1762686975 .shape-fill {
-  fill: #4a3636;
-}
-.middlesec 
-{
-  background-color: #000;
-  color: wheat;
-  width: 80%;
-  padding: 4rem 3rem 0 3rem;
-  margin:0 auto;
-}
 .middlesec h1
 {
   margin-top: 23px;
-  margin-bottom: 23px;
+  margin-bottom: 63px;
+  font-size: 35px;
+
 }
 .box {
   display: flex;
@@ -173,7 +160,45 @@ html, body {
   top: 100%;
   border-top: 34.6px solid #007BFF;
 }
+.thirdsec {
+  position: relative;       
+  width: 80%;
+  margin: 0 auto;
+  background-color: #7b5f5f;
+  color: white;
+  padding: 4rem 3rem 8rem 3rem; 
+  overflow: hidden;
+}
 
+.thirdsec h1{
+  font-size: 35px;
+}
+.pic {
+  display: flex;          
+  gap: 20px;               
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.circle {
+  width: 200px;            /* Circle width */
+  height: 200px;           /* Circle height */
+  background-color: #ebeff1; /* Circle color */
+  border-radius: 50%;      /* Makes it a circle */
+  border: 3px solid #d2d9dd; /* Optional border */
+  background-size: cover;    /* Cover whole circle */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+}
+.circle1 {
+background-image: url('https://avatars.preply.com/i/logos/62e955ab-08c5-412a-89a9-0b3a0a5ff0a0.jpg'); 
+}
+.circle2 {
+background-image: url('https://th.bing.com/th?id=OIF.Gz%2bkP%2fJawSTf%2b7O2PrZGPw&cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3'); 
+}
+.circle3 {
+background-image: url('https://tse1.explicit.bing.net/th/id/OIP.aMhfg6-3Z-TmXL5I4vIjpgHaHa?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3'); 
+}
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   section {
