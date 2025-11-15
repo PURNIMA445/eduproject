@@ -11,19 +11,7 @@ export default function HomePage() {
 
   return (
     <main id="main">
-     <header className="header">
-            <div className="header-container">
-              <h1 className="logo">ABC Secondary School</h1>
-              <nav>
-                <ul className="nav-list">
-                  <li><Link href="/">Home</Link></li>
-                  <li><Link href="/about">About</Link></li>
-                  <li><Link href="/contact">Contact</Link></li>
-                  <li><Link href="/login">Login</Link></li>
-                </ul>
-              </nav>
-            </div>
-          </header>
+     
         <div className="content">
             
         <div className="page1">
@@ -78,9 +66,7 @@ export default function HomePage() {
         </div>
         
     
-    <footer className="footer">
-      <p>© 2025 ABC Secondary School | All Rights Reserved</p>
-    </footer>
+    
 
       {/* Load GSAP and ScrollTrigger from CDN */}
       <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" strategy="afterInteractive" />

@@ -3,6 +3,8 @@ import "./globals.css";
 import "../public/styles/home.css";
 import "../public/styles/about.css";
 import "../public/styles/contact.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -30,8 +32,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-       
+       <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

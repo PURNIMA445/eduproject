@@ -9,8 +9,12 @@ const page = () => {
             <i className="fa-solid fa-building-columns"></i>
         </div>
         <div className="text">
-            <h1>ABC ACADEMY</h1>
-            <p>Empowering Mind, Building Future</p>
+        <h1 style={{ fontSize: "clamp(2rem, 4vw, 3rem)", letterSpacing: "2px",color:"white" }}>
+  ABC ACADEMY
+</h1>
+
+            <p style={{fontSize: "clamp(1rem, 2vw, 1.3rem)",
+  color: "#ddd"}}>Empowering Mind, Building Future</p>
         </div>
     </div>
     <div className="sec2">
