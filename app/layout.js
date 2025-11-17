@@ -5,6 +5,7 @@ import "../public/styles/about.css";
 import "../public/styles/contact.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { ClerkProvider } from "@clerk/nextjs";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -22,6 +23,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    <ClerkProvider>
     <html lang="en">
       <head>
         <link
@@ -37,5 +39,6 @@ export default function RootLayout({ children }) {
         <Footer />
       </body>
     </html>
+    </ClerkProvider>
   );
 }
