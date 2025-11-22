@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",       // project root
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"]     // maps @/ to your project root
     }
-  }
+  },
+  "include": ["next-env.d.ts", "**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"]
 }
